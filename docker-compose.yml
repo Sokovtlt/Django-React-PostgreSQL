@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  backend:
+    build: ./fullstack_django
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./fullstack_django:/app
+    depends_on:
+      - db
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    volumes:
+      - ./frontend:/app
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: django_user
+      POSTGRES_PASSWORD: django_password
+      POSTGRES_DB: django_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
