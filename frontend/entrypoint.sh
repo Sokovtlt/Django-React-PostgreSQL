@@ -1,6 +1,6 @@
 #!/bin/ash
 
 npm ci
-npm biuld
+npm run biuld
 
 exec "$@"
