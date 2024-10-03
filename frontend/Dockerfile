@@ -11,6 +11,8 @@ RUN npm install -g serve
 
 EXPOSE 3000
 
-CMD ["npm", "ci"]
-CMD ["npm", "run", "build"]
+RUN chmod +x /app/entrypoint.sh
+
+ENTRYPOINT ["/app/entrypoint.sh"]
+
 CMD ["serve", "-s", "build", "--single"]
