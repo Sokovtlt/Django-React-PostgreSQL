@@ -15,6 +15,9 @@ Open the terminal from the project's root directory, and enter the command:
 $ docker-compose up -d --build
 ```
 
+Django project is on http://localhost:8000 as backend.
+React projecct is on http://localhost:3000 as frontend.
+
 
 ### <a id="tech">Technologies</a>
 For the installation and launch of the project, you need [Docker](https://docker.com/).
