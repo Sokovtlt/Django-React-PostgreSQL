@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/bash
 
 npm ci
 npm run biuld
