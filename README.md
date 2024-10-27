@@ -1,3 +1,6 @@
+<div id="header" align="center">
+  <img src="https://repository-images.githubusercontent.com/866702397/db7d9014-85dc-463d-8804-8093306a8286" width="150"/>
+</div>
 # Learning assignment for connecting React to Django
 
 
